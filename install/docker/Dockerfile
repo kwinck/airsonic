@@ -23,7 +23,7 @@ COPY run.sh /usr/local/bin/run.sh
 
 RUN chmod +x /usr/local/bin/run.sh
 
-COPY target/dependency/airsonic-main.war airsonic.war
+ADD https://github.com/airsonic/airsonic/releases/download/v10.1.2/airsonic.war airsonic.war
 
 EXPOSE $AIRSONIC_PORT
 
